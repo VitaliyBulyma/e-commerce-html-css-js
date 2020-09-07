@@ -293,6 +293,8 @@ ul {
     left: 0;
     background: #333;
     width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
   }
   nav ul li {
     display: block;
@@ -307,4 +309,14 @@ ul {
     display: inline-block;
     cursor: pointer;
   }
+}
+
+/* media queries for small screens */
+@media only screen and (max-width: 800px) {
+    .row {
+        text-align: center;
+      }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
 }
